@@ -1,0 +1,21 @@
+/* public/style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    text-align: center;
+    padding-top: 50px;
+  }
+  
+  input, button {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  a {
+    display: block;
+    margin: 10px 0;
+    color: blue;
+  }
+  
+  

@@ -1,0 +1,33 @@
+<!-- views/index.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Cachorro</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h2>Cadastro de Cachorro</h2>
+  <form action="/cachorros" method="POST">
+    <input type="text" name="nome" placeholder="Nome" required>
+    <input type="text" name="raca" placeholder="Raça" required>
+    <input type="number" name="idade" placeholder="Idade" required>
+    <input type="number" step="0.01" name="peso" placeholder="Peso (kg)" required>
+    <button type="submit">Cadastrar</button>
+  </form>
+
+  <h3>Ações</h3>
+  <a href="/cachorros">Ver Cachorros (JSON)</a><br>
+
+  <form action="/cachorros/delete" method="GET">
+    <input type="number" name="id" placeholder="ID para deletar">
+    <button type="submit">Excluir por ID</button>
+  </form>
+
+  <form action="/cachorros/delete/nome" method="GET">
+    <input type="text" name="nome" placeholder="Nome para deletar">
+    <button type="submit">Excluir por Nome</button>
+  </form>
+  
+</body>
+</html>
